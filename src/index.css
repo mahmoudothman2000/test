@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/*^ ========== Style NavBar Section =========== */
+
+nav.navbar{
+  background-color:  rgb(44,62,80) !important;
+  height: 100px;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  box-shadow: 0px -6px  15px white;
+}
+
+
+.maxHeight {
+  height: 100px !important;
+}
+.minHeight {
+  height: 80px !important;
+}
+
+
+.nav-link {
+  padding: 5px 10px !important;
+  margin: 0px 5px !important;
+}
+ul li {
+  font-weight: bold;
+}
+.logoStyle{
+  font-size: 35px !important;
+  font-weight: bold !important;
+  color: white !important;
+}
+.active , .nav-link:hover{
+  padding: 5px 10px !important;
+  background-color: #1abc9c !important;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.navbar-toggler {
+  border: 2px solid white !important;
+}
+
+
+
+@media all and (max-width: 992px){
+  .navbar-collapse{
+    background-color: rgb(66, 66, 66) !important;
+    padding: 20px 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+  .navbar-collapse ul li {
+    margin: 4px 0px;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+/*^ ========== Style Home Section =========== */
+.containerHome{
+  background-color: #1abc9c;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+} 
+.headerHome .parentHeadMain .left-component,
+.headerHome .parentHeadMain .right-component {
+  width: 120px;
+  height: 6px;
+  background-color: white ;
+}
+.headerHome .parentHeadMain .StarHead {
+  color: white ;
+  margin: 0px 20px;
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+/*^ ========== Style About Section =========== */
+.parentHeadMain {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.headerAbout .parentHeadMain .left-component,
+.headerAbout .parentHeadMain .right-component {
+  width: 120px;
+  height: 6px;
+  background-color: white  ;
+}
+.headerAbout .parentHeadMain .StarHead {
+  color: white ;
+  margin: 0px 20px;
+  font-size: 18px;
+}
+.mainAbout {
+  background-color: #1abc9c;
+}
+.about_item_one{
+  padding-left: 80px !important;
+}
+.about_item_two{
+  padding-right: 80px !important;
+}
+@media all and (max-width: 992px){
+  .about_item_one{
+    padding: 10px !important;
+  }
+  .about_item_two{
+    padding: 10px !important;
+  }
+}
+
+
+
+
+
+
+
+/*^ ========== Style Portfolio Section =========== */
+.headMainPortfolio {
+  color: #2c3e50 ;
+}
+.headerPortfolio .parentHeadMain .left-component,
+.headerPortfolio .parentHeadMain .right-component {
+  width: 120px;
+  height: 6px;
+  background-color: #2c3e50;
+}
+.headerPortfolio .parentHeadMain .StarHead {
+  color: #2c3e50 ;
+  margin: 0px 20px;
+  font-size: 18px;
+}
+
+/*^ ========== Style Portfolio Layer  Section =========== */
+.mainLayer {
+  z-index: 999;
+  background-color: rgba(0, 128, 0, 0.356);
+  justify-content: center !important;
+  align-items: center !important;
+}
+.mainLayer .imageLayer{
+  width: 700px;
+  height: 400px !important;
+  margin-top: 100px;
+  overflow: hidden;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+/* *================ */
+.layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #45b39be1;
+  font-size: 200px;
+  color: white;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  opacity: 0;
+}
+.item:hover .layer {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+/*^ ========== Style Contact Section =========== */
+.headMainContact {
+  color: #2c3e50 ;
+}
+.inputForm {
+  margin-bottom: 30px;
+  height: 45px;
+}
+.itemFormDiv {
+  position: relative;
+}
+.labelFormContact{
+  position: absolute;
+  z-index: -1;
+  left: 10px;
+  transition: 0.6s ease;
+  -webkit-transition: 0.6s ease;
+  -moz-transition: 0.6s ease;
+  -ms-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+}
+.headerContact .parentHeadMain .left-component,
+.headerContact .parentHeadMain .right-component{
+  width: 120px;
+  height: 6px;
+  background-color: #2c3e50;
+}
+.headerContact .parentHeadMain .StarHead {
+  color: #2c3e50 ;
+  margin: 0px 20px;
+  font-size: 18px;
+}
+  
+
+
+
+
+
+
+
+/*^ ========== Style Section Footer =========== */
+.iconSocial {
+  width: 40px !important;
+  height: 40px !important;
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.footerDiv {
+  background-color: #1a252f;
+  padding: 20px 0px !important;
+  margin: 0px !important;
+}
+.parentFooter {
+  padding: 50px 0px;
+  background-color: #2c3e50;
+
+}
+
+
+
+
+/*^ ========== Style NotFound Section =========== */
+.found-home{
+  font-size: 100px;
+}
+
+
